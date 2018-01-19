@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.farhan.project2.Basic3RadioButton"
+    tools:showIn="@layout/activity_basicwidget3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_margin="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/radg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum Menikah"/>
+        <RadioButton
+            android:id="@+id/rad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menikah"/>
+        <RadioButton
+            android:id="@+id/rad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duda"/>
+        <RadioButton
+            android:id="@+id/rad4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Janda"/>
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tjumlahanak"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/jumlahanak"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Jumlah Anak"
+        android:inputType="numberSigned"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/Buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"/>
+
+    <TextView
+        android:id="@+id/Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Anda : "/>
+
+</LinearLayout>
