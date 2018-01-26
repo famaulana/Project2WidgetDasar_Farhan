@@ -14,7 +14,7 @@ import com.example.farhan.project2.adapter.KotaAdapter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Basic5Spinner extends AppCompatActivity {
+public class basic5spinner extends AppCompatActivity {
 
     Spinner profinsi, kota;
     TextView hasil;
@@ -23,8 +23,6 @@ public class Basic5Spinner extends AppCompatActivity {
             {"Banyuwangi","Malang" , "Surabaya"},{"Denpasar","Nusa Dua"}};
     ArrayList<String> listKota = new ArrayList<>();
     KotaAdapter adapter;
-
-    //49
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,5 +1,6 @@
 package com.example.farhan.project2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,9 +13,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class Basic3RadioButton extends AppCompatActivity {
+public class basic3radiobutton extends AppCompatActivity {
 
-//    Basic3RadioButton r1,r2,r3,r4;
+//    basic3radiobutton r1,r2,r3,r4;
     RadioGroup rg;
     TextView hasil;
 
@@ -31,6 +32,16 @@ public class Basic3RadioButton extends AppCompatActivity {
 //        r4 = findViewById(R.id.rad4);
         rg = findViewById(R.id.radg);
         hasil = findViewById(R.id.Hasil);
+        Button button = findViewById(R.id.nextButton3);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getApplicationContext(),basic4checkbox.class);
+
+                startActivity(i);
+            }
+        });
 
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -70,7 +81,7 @@ public class Basic3RadioButton extends AppCompatActivity {
 
         //Group
 //        if(rg.getCheckedRadioButtonId()!=-1){
-//            Basic3RadioButton rb = (Basic3RadioButton)
+//            basic3radiobutton rb = (basic3radiobutton)
 //                    findViewById(rg.getCheckedRadioButtonId());
 //            thasil = rb.getText().toString();
 //        }

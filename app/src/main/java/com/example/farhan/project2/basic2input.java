@@ -1,8 +1,7 @@
 package com.example.farhan.project2;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -10,10 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Basic2Input extends AppCompatActivity {
+public class basic2input extends AppCompatActivity {
 
     EditText nama, tahun;
-    Button buton;
+    Button buton, button;
     TextView hasil;
 
     @Override
@@ -26,7 +25,17 @@ public class Basic2Input extends AppCompatActivity {
         nama = findViewById(R.id.etnama);
         tahun = findViewById(R.id.ettahun);
         buton = findViewById(R.id.etbuton);
+        button = findViewById(R.id.nextButton2);
         hasil = findViewById(R.id.ethasil);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getApplicationContext(),basic3radiobutton.class);
+
+                startActivity(i);
+            }
+        });
 
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +43,7 @@ public class Basic2Input extends AppCompatActivity {
                 doProcess();
             }
         });
+
     }
 
     private void doProcess() {

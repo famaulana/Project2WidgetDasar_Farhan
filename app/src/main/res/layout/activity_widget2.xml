@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.farhan.project2.Basic2Input">
+    tools:context="com.example.farhan.project2.basic2input">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,6 +20,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_widget2" />
+    <include layout="@layout/basic2input" />
 
 </android.support.design.widget.CoordinatorLayout>

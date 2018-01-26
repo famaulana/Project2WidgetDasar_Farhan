@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.farhan.project2.Basic3RadioButton"
+    tools:context="com.example.farhan.project2.basic3radiobutton"
     tools:showIn="@layout/activity_basicwidget3"
     android:orientation="vertical">
 
@@ -66,5 +66,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Status Anda : "/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/nextButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#d61010"
+            android:text="Next"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
 
 </LinearLayout>

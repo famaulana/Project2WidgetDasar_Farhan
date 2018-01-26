@@ -9,26 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Basic1Output" />
-        <activity
-            android:name=".Basic2Input"
-            android:label="@string/title_activity_widget2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Basic3RadioButton"
-            android:label="@string/title_activity_basicwidget3"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Basic4CheckBox"
-            android:label="@string/title_activity_basic4_check_box"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Basic5Spinner">
+        <activity android:name=".basic1output">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".basic2input"
+            android:label="@string/title_activity_widget2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".basic3radiobutton"
+            android:label="@string/title_activity_basicwidget3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".basic4checkbox"
+            android:label="@string/title_activity_basic4_check_box"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".basic5spinner"/>
     </application>
 
 </manifest>

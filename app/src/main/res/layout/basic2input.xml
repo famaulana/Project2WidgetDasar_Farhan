@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.farhan.project2.Basic2Input"
+    tools:context="com.example.farhan.project2.basic2input"
     android:orientation="vertical">
 
     <ImageView
@@ -54,5 +54,21 @@
         android:gravity="center_horizontal"
         android:text="Hasil"
         android:textAlignment="gravity" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/nextButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#d61010"
+            android:text="Next"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
 
 </LinearLayout>

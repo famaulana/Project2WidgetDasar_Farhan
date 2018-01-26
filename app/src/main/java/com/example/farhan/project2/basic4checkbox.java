@@ -1,16 +1,20 @@
 package com.example.farhan.project2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
-public class Basic4CheckBox extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener{
+import java.time.Instant;
+
+public class basic4checkbox extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener{
 
     CheckBox c1,c2,c3,c4,c5;
     TextView hasil, jumlah;
@@ -22,6 +26,17 @@ public class Basic4CheckBox extends AppCompatActivity implements CompoundButton.
         setContentView(R.layout.activity_basic4_check_box);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button button = findViewById(R.id.nextButton4);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),basic5spinner.class);
+
+                startActivity(i);
+            }
+        });
 
         c1 = findViewById(R.id.membaca);
         c2 = findViewById(R.id.olahraga);

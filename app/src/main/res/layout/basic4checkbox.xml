@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.farhan.project2.Basic4CheckBox"
+    tools:context="com.example.farhan.project2.basic4checkbox"
     tools:showIn="@layout/activity_basic4_check_box"
     android:orientation="vertical">
 
@@ -68,5 +68,22 @@
         android:layout_height="wrap_content"
         tools:text="Jumlah Hobi"
         android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/nextButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#d61010"
+            android:text="Next"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
 
 </LinearLayout>
